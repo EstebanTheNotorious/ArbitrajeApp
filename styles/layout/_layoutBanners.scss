@@ -1,0 +1,22 @@
+.layout-banners {
+  display: flex;
+  flex-direction: column;
+}
+.layout-banner-container {
+  flex-grow: 1;
+  display: flex;
+}
+.layout-banner-dashboard-marketing1 {
+  background-image: url("/assets/dashboard/banner1_dashboard.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 6000 / 2518;
+  width: 100%;
+}
+.layout-banner-dashboard-marketing2 {
+  background-image: url("/assets/dashboard/banner2_dashboard.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  aspect-ratio: 6000 / 2707;
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+.widthModalEventos {
+    width: 50%;
+}
+
+@media screen and (max-width: 1260px) {
+    .widthModalEventos {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .widthModalEventos {
+        width: 100%;
+    }
+}

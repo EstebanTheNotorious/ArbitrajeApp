@@ -1,0 +1,54 @@
+.widthModalEdit {
+  width: 410px;
+  border-radius: 8px;
+
+  h5 {
+    text-align: center;
+    color: var(--gray-400);
+    margin-top: var(--inline-spacing);
+    margin-bottom: 0;
+  }
+}
+
+.headerModalEdit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputModalAuth::placeholder {
+  font-size: var(--font-placehoderInput-size);
+}
+
+.inputModalAuth:hover {
+  border: 1px solid var(--secondary-color) !important;
+}
+
+.inputModalAuth:focus {
+  box-shadow: none !important;
+}
+
+.customButton:focus {
+  box-shadow: none;
+}
+
+.labelValue {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.inputModalAuth::placeholder {
+  font-size: var(--font-placehoderInput-size);
+}
+
+.customFileUploadButton {
+  width: 100%;
+}
+.customFileUploadButton:hover {
+  background: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+.customFileUploadButton span {
+  font-size: var(--font-placehoderInput-size);
+  font-weight: 400;
+}

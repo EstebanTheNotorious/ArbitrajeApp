@@ -1,0 +1,42 @@
+.button-fileUploader:enabled:hover,
+.p-button:not(button):not(a):not(.p-disabled):hover {
+  background: var(--highlight-text-color);
+  border: 1px solid var(--highlight-text-color);
+  filter: brightness(1.15);
+//   color: (--gray-300);
+}
+
+.p-fileupload .p-fileupload-row > div {
+    text-align: start;
+}
+
+.p-fileupload-row > div:last-child {
+    text-align: right;
+}
+
+.p-button.p-button-danger.p-button-text, 
+.p-buttonset.p-button-danger > 
+.p-button.p-button-text, 
+.p-splitbutton.p-button-danger > 
+.p-button.p-button-text, 
+.p-fileupload-choose.p-button-danger.p-button-text {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: transparent;
+}
+.p-button.p-button-danger.p-button-text:enabled:hover, 
+.p-button.p-button-danger.p-button-text:not(button):not(a):not( .p-disabled ):hover, 
+.p-buttonset.p-button-danger > 
+.p-button.p-button-text:enabled:hover, 
+.p-buttonset.p-button-danger > 
+.p-button.p-button-text:not(button):not(a):not(.p-disabled):hover, 
+.p-splitbutton.p-button-danger > 
+.p-button.p-button-text:enabled:hover, 
+.p-splitbutton.p-button-danger > 
+.p-button.p-button-text:not(button):not(a):not(.p-disabled):hover, 
+.p-fileupload-choose.p-button-danger.p-button-text:enabled:hover, 
+.p-fileupload-choose.p-button-danger.p-button-text:not(button):not(a):not( .p-disabled ):hover {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background: rgba(239, 68, 68, 0.16);
+}

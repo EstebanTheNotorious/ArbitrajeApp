@@ -1,0 +1,9 @@
+.customerStripRowDatatable.p-datatable-striped
+  .p-datatable-tbody
+  > tr.p-row-odd {
+  background: var(--primary-color-striprow-alfa);
+}
+
+.p-datatable.p-datatable-sm .p-datatable-footer {
+  padding: 0;
+}

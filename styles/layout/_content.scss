@@ -1,0 +1,14 @@
+.layout-main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--padding-inline-dropdownmenu);
+    // min-height: 100vh;
+    justify-content: space-between;
+    padding: 0 2rem 2rem 2rem;
+    transition: margin-left $transitionDuration;
+    color: var(--surface-900)
+}
+
+.layout-main {
+    flex: 1 1 auto;
+}

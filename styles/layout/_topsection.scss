@@ -1,0 +1,109 @@
+.layout-topsection {
+  position: absolute;
+  height: var(--topsection-height);
+  z-index: 997;
+  top: 0;
+  left: 0;
+  right: 0;
+  // width: 100px;
+  background-color: var(--surface-g);
+  display: flex;
+  align-items: center;
+
+  .container-topsection {
+    // position: relative;
+    display: flex;
+    margin: 0 auto;
+    // width: fit-content;
+    height: 100%;
+  }
+
+  .top-section-card {
+    height: 88px;
+  }
+
+  /* .custom-carousel .p-carousel-item {
+   width: 150px;
+  } */
+
+  .custom-carousel .p-carousel-content .p-carousel-prev:focus,
+  .p-carousel .p-carousel-content .p-carousel-next:focus {
+    box-shadow: none;
+    background: none;
+  }
+  .custom-carousel .p-carousel-content .p-carousel-prev:hover,
+  .p-carousel .p-carousel-content .p-carousel-next:hover {
+    background: none;
+  }
+}
+
+@media (max-width: 4000px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 260px;
+    }
+  }
+}
+@media (max-width: 3200px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 230px;
+    }
+  }
+}
+@media (max-width: 2900px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 200px;
+    }
+  }
+}
+@media (max-width: 2400px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 170px;
+    }
+  }
+}
+@media (max-width: 1920px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 140px;
+    }
+  }
+}
+@media (max-width: 1680px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 125px;
+    }
+  }
+}
+@media (max-width: 1420px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 115px;
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 105px;
+    }
+  }
+}
+@media (max-width: 891px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 100px;
+    }
+  }
+}
+@media (max-width: 620px) {
+  .layout-topsection {
+    .custom-carousel .p-carousel-item {
+      width: 90px;
+    }
+  }
+}

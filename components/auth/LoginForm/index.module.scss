@@ -1,0 +1,13 @@
+.inputModalAuth::placeholder {
+  font-size: var(--font-placehoderInput-size);
+}
+.inputModalAuth:hover {
+  border: 1px solid var(--secondary-color) !important;
+}
+.inputModalAuth:focus {
+  box-shadow: none !important;
+}
+
+.customButton:focus {
+    box-shadow: none;
+}

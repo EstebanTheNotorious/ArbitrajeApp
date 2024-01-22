@@ -1,0 +1,19 @@
+/* .p-radiobutton .p-radiobutton-box {
+  width: var(--size-radio-button) !important;
+  height: var(--size-radio-button) !important;
+}
+ */
+
+.p-radiobutton .p-radiobutton-box.p-highlight {
+  color: var(--secondary-color);
+  background: var(--secondary-color);
+}
+.p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
+  box-shadow: none;
+  border-color: var(--secondary-color);
+  outline: none;
+}
+.p-radiobutton .p-radiobutton-box.p-highlight:not(.p-disabled):hover,
+.p-radiobutton .p-radiobutton-box:not(.p-disabled):not(.p-highlight):hover {
+  border-color: var(--secondary-color);
+}

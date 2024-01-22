@@ -1,0 +1,59 @@
+.customButton:focus {
+  box-shadow: none;
+}
+
+.customCard {
+  background: var(--surface-f);
+}
+
+.colorCard {
+  color: var(--text-color);
+}
+
+.titleCard:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.cardBorder {
+  border: none;
+}
+
+@media screen and (max-width: 1260px) {
+  .cardLoginSubscribe {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cardTitulares {
+    display: none;
+  }
+}
+.cardTitulares {
+  padding: 0;
+}
+.vinetaTitular {
+  list-style-type: none;
+  color: var(--gray-800);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.vinetaTitular::before {
+  color: var(--gray-500);
+  content: "\2022";
+  display: block;
+  float: left;
+  font-size: 10px;
+  font-weight: 700;
+  padding-top: 4px;
+  padding-right: 3px;
+  justify-content: center;
+}
+.vinetaTitular:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-weight: 500;
+}

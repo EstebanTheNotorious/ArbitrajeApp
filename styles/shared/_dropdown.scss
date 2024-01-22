@@ -1,0 +1,15 @@
+.p-dropdown .p-dropdown-label.p-placeholder {
+  font-size: var(--font-placehoderInput-size) !important;
+}
+
+.p-dropdown-panel {
+  width: 310px;
+}
+.p-dropdown-filter {
+  height: 42px;
+}
+.p-dropdown-filter:hover,
+.p-dropdown-filter:focus {
+  box-shadow: none !important;
+  border-color: var(--secondary-color) !important;
+}

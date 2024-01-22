@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--surface-ground);
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.layout-wrapper {
+    min-height: 100vh;
+    // background-color: var(--gray-200);
+    background-color: var(--surface-g);
+}
+
+// PARA CENTRAR EL OJO DEL INPUT PASSWORD
+.p-input-icon-left>i,
+.p-input-icon-right>i,
+.p-input-icon-left>svg,
+.p-input-icon-right>svg,
+.p-input-icon-left>.p-input-prefix,
+.p-input-icon-right>.p-input-suffix {
+    top: 40%
+}
+
+// PARA CENTRAR EL OJO DEL INPUT PASSWORD

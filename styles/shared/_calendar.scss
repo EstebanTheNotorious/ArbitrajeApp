@@ -1,0 +1,31 @@
+.p-calendar .p-inputtext {
+  height: 42px !important;
+  border-radius: 3px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.p-calendar-w-btn-right .p-inputtext::placeholder {
+  font-size: var(--font-placehoderInput-size) !important;
+}
+
+.p-calendar .p-datepicker-trigger {
+  border-top-right-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
+  width: 38px;
+}
+
+.p-calendar .p-inputtext {
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+}
+
+.p-calendar .p-inputtext:enabled:hover,
+.p-calendar .p-inputtext:enabled:focus,
+.p-calendar .p-inputtext:enabled:visited {
+  border-color: var(--secondary-color);
+}
+
+.p-calendar .p-inputtext {
+  text-align: center;
+}

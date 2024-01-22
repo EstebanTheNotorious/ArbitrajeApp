@@ -1,0 +1,14 @@
+.widthModalDocPago {
+    width: 50%;
+}
+
+@media screen and (max-width: 1260px) {
+    .widthModalDocPago {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 680px) {
+    .widthModalDocPago {
+        width: 100%;
+    }
+}

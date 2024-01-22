@@ -1,0 +1,46 @@
+.customMessages {
+    position: absolute;
+    left: 0;
+    top: 32px;
+    padding-inline: var(--inline-spacing);
+    width: 100%;
+    margin: 0;
+}
+
+.customMessages .p-message-info {
+    background: var(--primary-color-alfa);
+    color: var(--surface-primary);
+    border: solid var(--surface-primary);
+    border-width: 0 0 0 var(--border-radius);
+    display: flex;
+    align-items: center;
+    height: 34px;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.customMessages .p-message-summary {
+    font-weight: bold;
+}
+
+.customMessages .p-message-summary::after {
+    content: " →";
+}
+
+.customMessages .p-message-info svg g {
+    color: var(--surface-primary);
+}
+
+.customMessages .p-message-info .p-message-close {
+    color: var(--surface-f);
+    position: absolute;
+    right: var(--content-padding);
+    background: var(--surface-primary-alfa);
+    width: var(--content-padding);
+    height: var(--content-padding);
+}
+
+@media (max-width: 991px) {
+    .customMessages {
+        display: none;
+    }
+}

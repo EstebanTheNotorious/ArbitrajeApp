@@ -1,0 +1,18 @@
+.customButtonset .p-button:first-of-type,
+.customButtonset .p-button:last-of-type {
+    width: 50%;
+    height: 42px;
+}
+.customButtonset .p-button:first-of-type:focus,
+.customButtonset .p-button:last-of-type:focus {
+   box-shadow: none;
+   background: var(--secondary-color);
+   border: 1px solid var(--secondary-color);
+   color: var(--surface-f);
+}
+.customButtonset .p-button:first-of-type:active,
+.customButtonset .p-button:last-of-type:active,
+.p-selectbutton .p-button.p-highlight {
+   background: var(--secondary-color);
+   border: 1px solid var(--secondary-color);
+}

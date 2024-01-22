@@ -1,0 +1,9 @@
+.widthModalEditar {
+    width: 75%;
+}
+
+@media screen and (max-width: 960px) {
+    .widthModalEditar {
+        width: 100%;
+    }
+}
