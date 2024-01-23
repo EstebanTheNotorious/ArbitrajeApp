@@ -10,7 +10,7 @@ import React, {
   useState,
 } from "react";
 import { Messages } from "primereact/messages";
-import { LayoutContext } from "./context/layoutcontext";
+import { LayoutContext } from "./contexto/layoutcontext";
 import AppDropdownMenu from "./AppDropdownMenu";
 import { menuData } from "./MenuData";
 import ModalAuth from "../components/auth/ModalAuth";
@@ -25,13 +25,13 @@ import {
   faRightFromBracket,
   faEllipsis,
   faUser,
-  faToolbox,
-  faPeopleRoof,
+  faToolbox
 } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import { TopBarData, TopBarUserOptionData } from "./topBarData";
 import ability from "../authorization/defineAbility";
+// eslint-disable-next-line react/display-name
 const AppTopbar = forwardRef((props, ref) => {
   const router = useRouter();
   const { session, setSession, verifySessionToken } =
@@ -125,7 +125,7 @@ const AppTopbar = forwardRef((props, ref) => {
       ref={topbarRef}
     >
       <div className="container-topbar">
-        {/* <Link href="/" id="logo-Aname" className="layout-topbar-logo">
+        <Link href="/" id="logo-Aname" className="layout-topbar-logo">
           <img
             // src="/layout/images/logo-aname.svg"
             src="/layout/images/AnameLogo.svg"
@@ -133,7 +133,7 @@ const AppTopbar = forwardRef((props, ref) => {
             // width="227px"
             alt="ANAME LOGO"
           />
-        </Link> */}
+        </Link>
         <ul className="layout-topbar-menu">
           {menuData.map((item, index) => (
             <li className="p-link layout-topbar-menu-item" key={index}>

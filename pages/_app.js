@@ -1,4 +1,4 @@
-import { LayoutProvider } from "../layout/context/layoutcontext";
+import { LayoutProvider } from "../layout/contexto/layoutcontext";
 import { BubbleProvider } from "../providers/bubblecontext";
 import { SessionProvider } from "../providers/sessioncontext";
 import { EventProvider } from "../providers/eventContext";

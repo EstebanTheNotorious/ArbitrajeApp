@@ -11,7 +11,7 @@ import AppFooter from "./AppFooter";
 import AppTopbar from "./AppTopbar";
 import AppTopSection from "./AppTopSection";
 import AppSidebar from "./AppSidebar";
-import { LayoutContext } from "./context/layoutcontext";
+import { LayoutContext } from "./contexto/layoutcontext";
 import PrimeReact from "primereact/api";
 import SessionContext from "../providers/sessioncontext";
 const Layout = (props) => {

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AppMenuitem from "./AppMenuItem";
-import { LayoutContext } from "./context/layoutcontext";
-import { MenuProvider } from "./context/menucontext";
+import { LayoutContext } from "./contexto/layoutcontext";
+import { MenuProvider } from "./contexto/MenuContext";
 import { Button } from "primereact/button";
 // import Link from "next/link";
 import { menuData } from "./MenuData";
@@ -25,7 +25,12 @@ const AppMenu = () => {
         {menuData.map((item, i) => {
           return (
             !item.seperator && (
-              <AppMenuitem item={item} root={true} index={i} key={item.label} />
+              <AppMenuitem
+                item={item}
+                root={true}
+                index={i}
+                key={item.label}
+              />
             )
           );
           // ) : (
@@ -34,11 +39,13 @@ const AppMenu = () => {
         })}
       </ul>
       <div className="footer-sidebar">
-        <img
-          src="/layout/images/AnameLogo.svg"
-          width="100%"
-          alt="ANAME LOGO"
-        />
+        <picture>
+          <img
+            src="/layout/images/AnameLogo.svg"
+            width="100%"
+            alt="ANAME LOGO"
+          />
+        </picture>
       </div>
     </MenuProvider>
   );

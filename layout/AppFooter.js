@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { LayoutContext } from "./context/layoutcontext";
+import { LayoutContext } from "./contexto/layoutcontext";
 import { Button } from "primereact/button";
 import ModalAuth from "../components/auth/ModalAuth";
 
@@ -11,12 +11,14 @@ const AppFooter = () => {
     <>
       <div className="layout-footer">
         <div className="text-700 text-center p-7">
-          {/* <img
-          // src='/layout/images/aname-logo-footer.svg'
-          src="/layout/images/AnameLogo_png.svg"
-          alt="LOGO ANAME"
-          height="150"
-        /> */}
+          <picture>
+            <img
+              // src='/layout/images/aname-logo-footer.svg'
+              src="/layout/images/AnameLogo_png.svg"
+              alt="LOGO ANAME"
+              height="150"
+            />
+          </picture>
           {/* <div className="text-blue-600 font-bold mb-3"><i className="pi pi-discord"></i>&nbsp;POWERED BY DISCORD</div> */}
           <div className="text-900 font-bold xl:text-3xl lg:text-2xl md:text-lg sm:text-base mt-3">
             FEDERACION DE ARBITRAJE
