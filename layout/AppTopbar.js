@@ -249,7 +249,7 @@ const AppTopbar = forwardRef((props, ref) => {
           type="button"
           className="button-manage p-link layout-options-user-button layout-topbar-button"
           data-pr-tooltip="Usuario"
-          data-pr-position="bottom"
+          data-pr-position="left"
           onClick={showManageOptions}
           style={{ height: "45px" }}
         >
