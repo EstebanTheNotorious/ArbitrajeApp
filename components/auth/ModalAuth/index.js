@@ -16,9 +16,9 @@ const ModalAuth = ({ action, visible, setVisible }) => {
       <picture>
         <img
           // src="/layout/images/aname-logo-footer.svg"
-          src="/layout/images/AnameLogo_png.svg"
+          src="/layout/images/logo.svg"
           alt="LOGO ANAME"
-          height="75"
+          height="50"
         />
       </picture>
       {/* <div className="m-3"></div> */}

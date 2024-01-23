@@ -25,7 +25,7 @@ import {
   faRightFromBracket,
   faEllipsis,
   faUser,
-  faToolbox
+  faToolbox,
 } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { useRouter } from "next/router";
@@ -126,13 +126,15 @@ const AppTopbar = forwardRef((props, ref) => {
     >
       <div className="container-topbar">
         <Link href="/" id="logo-Aname" className="layout-topbar-logo">
-          <img
-            // src="/layout/images/logo-aname.svg"
-            src="/layout/images/AnameLogo.svg"
-            width="227px"
-            // width="227px"
-            alt="ANAME LOGO"
-          />
+          <picture>
+            <img
+              // src="/layout/images/logo-aname.svg"
+              src="/layout/images/logo.svg"
+              width="227px"
+              // width="227px"
+              alt="ANAME LOGO"
+            />
+          </picture>
         </Link>
         <ul className="layout-topbar-menu">
           {menuData.map((item, index) => (

@@ -14,7 +14,7 @@ const AppFooter = () => {
           <picture>
             <img
               // src='/layout/images/aname-logo-footer.svg'
-              src="/layout/images/AnameLogo_png.svg"
+              src="/layout/images/logo.svg"
               alt="LOGO ANAME"
               height="150"
             />

@@ -11,13 +11,13 @@ export const SessionProvider = ({ children }) => {
 
   useEffect(() => {
     verifySessionToken();
-    // eslint-disable-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const verifySessionToken = async () => {
+  const verifySessionToken = () => {
     // setSession(localStorage.getItem('token'))
     // console.log('========> debugueando ......')
-    try {
+    /* try {
       await verifySession("Utils/verify-token").then((res) => {
         if (res?.data?.statusCode === 200 && res?.data?.result) {
           setSession(res.data.result);
@@ -36,7 +36,8 @@ export const SessionProvider = ({ children }) => {
         "[*] ============ [*] ERROR VERIFICANDO TOKEN DE SESION ",
         error
       );
-    }
+    } */
+    setSession(null);
   };
   const value = {
     session,
