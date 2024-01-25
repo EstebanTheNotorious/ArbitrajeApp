@@ -20,13 +20,14 @@
 
   .top-section-card {
     height: 88px;
+    // width: 75px;
   }
 
   /* .custom-carousel .p-carousel-item {
    width: 150px;
   } */
 
-  .custom-carousel .p-carousel-content .p-carousel-prev:focus,
+  /* .custom-carousel .p-carousel-content .p-carousel-prev:focus,
   .p-carousel .p-carousel-content .p-carousel-next:focus {
     box-shadow: none;
     background: none;
@@ -34,7 +35,7 @@
   .custom-carousel .p-carousel-content .p-carousel-prev:hover,
   .p-carousel .p-carousel-content .p-carousel-next:hover {
     background: none;
-  }
+  } */
 }
 
 @media (max-width: 4000px) {

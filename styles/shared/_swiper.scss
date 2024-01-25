@@ -1,0 +1,35 @@
+.swiper-button-next,
+.swiper-button-prev {
+  height: var(--padding-inline-dropdownmenu) !important;
+  width: var(--padding-inline-dropdownmenu) !important;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: var(--size-arrows-swiper) !important;
+  font-weight: bold;
+  color: var(--surface-primary); /* Color deseado para las flechas */
+  
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--surface-primary-alfa);
+  border-radius: 50%;
+}
+
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: var(--surface-ground) !important;
+}
+
+/* .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: red !important;
+} */
+
+.widthCarouselResponsive {
+  width: 50%;
+}

@@ -1,3 +1,52 @@
-/* .p-carousel[pr_id_3] .p-carousel-item {
-    // flex: none !important;
-} */
+.containerMainCarouselTopsection {
+  display: flex;
+  justify-content: center;
+  background-color: var(--surface-ground);
+}
+.carouselCustomTopSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sliderCustomTopSection {
+  width: 100%;
+}
+
+.react-multi-carousel-list {
+  justify-content: center;
+}
+.itemSliderCustomTopSection {
+  //   background-color: blue;
+  width: 1050px;
+}
+
+.carousel-container li {
+  //   width: 800px !important; /* Establecer el ancho inicial al 75% */
+  //   max-width: 100%; /* Asegurarse de que no exceda el ancho de la pantalla */
+  //   transition: width 500ms ease-in-out; /* Agregar transición para suavizar los cambios de ancho */
+  width: 1000px !important;
+  background: red;
+}
+
+@media (min-width: 530) {
+  .carousel-container li {
+    width: 600px !important; /* Establecer el ancho inicial al 75% */
+  }
+}
+
+.react-multiple-carousel__arrow {
+  background: transparent !important;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: var(--gray-600) !important;
+  font-size: 15px !important;
+  font-weight: bolder !important;
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(1% + 1px) !important;
+}
+.react-multiple-carousel__arrow--right {
+  right: calc(1% + 1px) !important;
+}

@@ -1,17 +1,12 @@
-// import Link from "next/link";
-// import { useRouter } from "next/router";
-// import { classNames } from "primereact/utils";
 import React, { forwardRef, useContext, useState, useEffect } from "react";
 import { LayoutContext } from "./contexto/layoutcontext";
-import { Button } from "primereact/button";
-import { Carousel } from "primereact/carousel";
-import { Tag } from "primereact/tag";
-// import { TopSectionService } from "../mockups/services/TopSectionService";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
 import { requestValdationToken } from "../utils/axios/axios";
-import moment from "moment";
 import { EventContext } from "../providers/eventContext";
 import { Tooltip } from "primereact/tooltip";
 
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 // eslint-disable-next-line react/display-name
 const AppTopSection = forwardRef((props, ref) => {
   const { chargeEvents } = useContext(EventContext);
@@ -26,43 +21,43 @@ const AppTopSection = forwardRef((props, ref) => {
       cityName: "Quito",
     },
     {
-      eventName: "Evento 1",
+      eventName: "Evento 2",
       eventStartDate: "12-12-24",
       eventHourStart: "15:00",
       cityName: "Quito",
     },
     {
-      eventName: "Evento 1",
+      eventName: "Evento 3",
       eventStartDate: "12-12-24",
       eventHourStart: "15:00",
       cityName: "Quito",
     },
     {
-      eventName: "Evento 1",
+      eventName: "Evento 4",
       eventStartDate: "12-12-24",
       eventHourStart: "15:00",
       cityName: "Quito",
     },
     {
-      eventName: "Evento 1",
+      eventName: "Evento 5",
       eventStartDate: "12-12-24",
       eventHourStart: "15:00",
       cityName: "Quito",
     },
     {
-      eventName: "Evento 1",
+      eventName: "Evento 6",
       eventStartDate: "12-12-24",
       eventHourStart: "15:00",
       cityName: "Quito",
     },
     {
-      eventName: "Evento 1",
+      eventName: "Evento 7",
       eventStartDate: "12-12-24",
       eventHourStart: "15:00",
       cityName: "Quito",
     },
     {
-      eventName: "Evento 1",
+      eventName: "Evento 8",
       eventStartDate: "12-12-24",
       eventHourStart: "15:00",
       cityName: "Quito",
@@ -82,47 +77,8 @@ const AppTopSection = forwardRef((props, ref) => {
       })
       .catch((err) => {
         console.error("[*] ========= [*] ERROR Get All Events", err);
-        // setMsgErrorLogin(err.response.data)
       });
   };
-  const responsiveOptions = [
-    {
-      breakpoint: "1865px",
-      numVisible: 9,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "1440px",
-      numVisible: 9,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "1290px",
-      numVisible: 7,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "1199px",
-      numVisible: 5,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "1020px",
-      numVisible: 3,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "891px",
-      numVisible: 2,
-      numScroll: 1,
-    },
-    {
-      breakpoint: "767px",
-      numVisible: 1,
-      numScroll: 1,
-    },
-  ];
-
   const extractHourEvent = (value) => {
     const partes = value.split(":");
     // Obtener las horas y minutos
@@ -131,59 +87,81 @@ const AppTopSection = forwardRef((props, ref) => {
     return horas + ":" + minutos;
   };
 
-  const productTemplate = (item) => {
+  const productTemplate = (item, i) => {
     return (
-      <div
-        className="top-section-card d-inline-block justify-content-center align-items-center border-1 border-dashed surface-border pt-1 text-center w-100"
-        style={{ height: "88px", verticalAlign: "middle", cursor: "pointer" }}
-      >
-        {item.eventName.length > 10 && <Tooltip target=".event-name" />}
-        <p
-          className="event-name m-0 text-red-600 font-bold text-xs"
-          style={{
-            textOverflow: "ellipsis",
-            overflow: "hidden",
-            whiteSpace: "nowrap",
-          }}
-          data-pr-tooltip={item.eventName}
-          data-pr-position="bottom"
+      <SwiperSlide key={i}>
+        <div
+          className="top-section-card d-inline-block justify-content-center align-items-center border-1 border-dashed surface-border text-center w-100"
+          style={{ height: "80px", verticalAlign: "middle", cursor: "pointer" }}
         >
-          {item.eventName}
-        </p>
-        {/* <p className="m-0 text-blue-800 font-bold text-xs">{moment(item.eventStartDate).format('DD-MM-YY')}</p> */}
-        <p className="m-0 text-blue-800 font-bold text-xs">
-          {item.eventStartDate}
-        </p>
-        {/* <p className="m-0 font-bold text-xs">{moment(item.eventEndDate).format('DD-MM-YY')}</p> */}
-        {/* <p className="m-0 text-blue-800 font-bold text-xs">{extractHourEvent(item.eventHourStart)}</p> */}
-        <p className="m-0 text-blue-800 font-bold text-xs">
-          {item.eventHourStart}
-        </p>
-        <p className="m-0 bg-blue-900 text-0">{item.cityName}</p>
-      </div>
+          {item.eventName.length > 10 && <Tooltip target=".event-name" />}
+          <p
+            className="event-name m-0 text-red-600 font-bold text-xs"
+            style={{
+              textOverflow: "ellipsis",
+              overflow: "hidden",
+              whiteSpace: "nowrap",
+            }}
+            data-pr-tooltip={item.eventName}
+            data-pr-position="bottom"
+          >
+            {item.eventName}
+          </p>
+          {/* <p className="m-0 text-blue-800 font-bold text-xs">{moment(item.eventStartDate).format('DD-MM-YY')}</p> */}
+          <p className="m-0 text-blue-800 font-bold text-xs">
+            {item.eventStartDate}
+          </p>
+          {/* <p className="m-0 font-bold text-xs">{moment(item.eventEndDate).format('DD-MM-YY')}</p> */}
+          {/* <p className="m-0 text-blue-800 font-bold text-xs">{extractHourEvent(item.eventHourStart)}</p> */}
+          <p className="m-0 text-blue-800 font-bold text-xs">
+            {item.eventHourStart}
+          </p>
+          <p className="m-0 bg-blue-900 text-0">{item.cityName}</p>
+        </div>
+      </SwiperSlide>
     );
   };
 
+  const responsive = {
+    420: {
+      slidesPerView: 1,
+    },
+    720: {
+      slidesPerView: 2,
+    },
+    960: {
+      slidesPerView: 3,
+    },
+    1150: {
+      slidesPerView: 4,
+    },
+    1350: {
+      slidesPerView: 5,
+    },
+    1500: {
+      slidesPerView: 6,
+    },
+  };
+
   return (
-    <>
-      {eventsList?.length > 0 && (
-        <div className="layout-topsection">
-          <div className="container-topsection">
-            <Carousel
-              value={eventsList}
-              numVisible={5}
-              numScroll={1}
-              responsiveOptions={responsiveOptions}
-              //circular
-              // autoplayInterval={5000}
-              itemTemplate={productTemplate}
-              showIndicators={false}
-              className="custom-carousel"
-            />
-          </div>
-        </div>
+    <div className="carouselCustomTopSection">
+      {eventsList.length > 0 && (
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={6}
+          className="w-50"
+          autoplay={{ delay: 4000, disableOnInteraction: false }} // Configuración de auto-play
+          loop={true}
+          /* pagination={{
+            clickable: true,
+          }} */
+          navigation
+          breakpoints={responsive}
+        >
+          {eventsList.map((el, i) => productTemplate(el, i))}
+        </Swiper>
       )}
-    </>
+    </div>
   );
 });
 

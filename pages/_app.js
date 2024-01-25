@@ -10,8 +10,9 @@ import "../styles/layout/layout.scss";
 import "../styles/shared/shared.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false;
+import "react-multi-carousel/lib/styles.css";
+import "swiper/swiper-bundle.css";
+
 
 export default function MyApp({ Component, pageProps }) {
   if (Component.getLayout) {
