@@ -10,7 +10,6 @@ import "../styles/layout/layout.scss";
 import "../styles/shared/shared.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import "react-multi-carousel/lib/styles.css";
 import "swiper/swiper-bundle.css";
 
 
